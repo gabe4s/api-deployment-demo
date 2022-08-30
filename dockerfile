@@ -8,6 +8,8 @@ RUN pip install -r requirements.txt
 
 COPY ./src /app
 
+EXPOSE 3000
+
 ENTRYPOINT ["python"]
 
 CMD ["main.py"]
