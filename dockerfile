@@ -12,4 +12,4 @@ EXPOSE 3000
 
 ENTRYPOINT ["python"]
 
-CMD ["main.py"]
+CMD ["api.py"]
