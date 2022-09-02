@@ -6,9 +6,5 @@ app = Flask(__name__)
 def index():
     return jsonify({'input': request.args.get('input')})
 
-@app.route('/test', methods = ['GET'])
-def test():
-    return "Hello DevOps Team"
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=3000)
