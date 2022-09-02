@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: api-deployment-demo
-  pullPolicy: Never
+  repository: 804011101642.dkr.ecr.us-east-2.amazonaws.com/api-deployment-demo
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
