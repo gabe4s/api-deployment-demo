@@ -7,7 +7,7 @@ def index():
     return jsonify({'input': request.args.get('input')})
 
 @app.route('/hello', methods = ['GET'])
-def index():
+def hello():
     return "Hello DevOps Team"
 
 if __name__ == "__main__":
