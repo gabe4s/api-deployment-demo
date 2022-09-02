@@ -19,7 +19,8 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry("https://804011101642.dkr.ecr.us-east-2.amazonaws.com/api-deployment-demo", "ecr:us-east-2:aws-cred") {
-                        dockerImage.push()
+                        app.push("${env.BUILD_NUMBER}")
+                        app.push("latest")
                     }
                 }
             }
