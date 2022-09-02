@@ -8,7 +8,7 @@ def index():
 
 @app.route('/test', methods = ['GET'])
 def index():
-    return "updated 2"
+    return "updated 3"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=3000)
