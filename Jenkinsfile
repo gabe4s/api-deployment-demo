@@ -15,9 +15,11 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
+        stage('Docker Push') {
             steps {
-                echo 'Deploying....'
+                docker.withRegistry("https://804011101642.dkr.ecr.us-east-2.amazonaws.com/api-deployment-demo", "ecr:us-east-2:aws-cred") {
+                    dockerImage.push()
+                }
             }
         }
     }
